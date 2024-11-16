@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class SumOfNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int targetSum = scanner.nextInt();
+        int currentSum = 0;
+
+        while (currentSum < targetSum) {
+            int number = scanner.nextInt();
+            currentSum += number;
+        }
+
+        System.out.println(currentSum);
+
+        scanner.close();
+    }
+}
